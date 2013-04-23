@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>@ViewBag.Message</h2>
+<p>
+    To learn more about Masstransit visit <a href="http://masstransit-project.com/" title="MassTransit Website">http://masstransit-project.com/</a>.
+</p>
+<form method="post" action="home/create">
+    <label>Customer First Name</label>    
+    <input type="text" name="FirstName" />
+    <label>Customer Last Name</label>    
+    <input type="text" name="LastName" />
+    <input type="submit" value="Create Customer" />
+</form>
