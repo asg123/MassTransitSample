@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Messages\Commands\CreateCustomer.cs" />
+    <Compile Include="Messages\Commands\ExecuteWorkflowList.cs" />
     <Compile Include="Messages\Events\CustomerCreated.cs" />
     <Compile Include="Messages\Events\CustomerCreationFailed.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
