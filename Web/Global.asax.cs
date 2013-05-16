@@ -36,7 +36,6 @@ namespace Web
             Bus.Initialize(sbc =>
             {
                 sbc.UseRabbitMq();
-                sbc.UseRabbitMqRouting();
                 sbc.ReceiveFrom("rabbitmq://guest:guest@dev_rabbitmq/sample.web");
             });
         }

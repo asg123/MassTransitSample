@@ -17,7 +17,6 @@ namespace CustomerCreationService
             Bus.Initialize(sbc =>
             {
                 sbc.UseRabbitMq();
-                sbc.UseRabbitMqRouting();
                 sbc.ReceiveFrom("rabbitmq://guest:guest@dev_rabbitmq/sample.customercreationservice");
             });
             Bus.Instance.SubscribeHandler<CreateCustomer>(msg => CreateCustomer(msg));
